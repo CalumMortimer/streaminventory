@@ -1,0 +1,66 @@
+input{
+    font-size: 0.8rem;
+    margin: 0px;
+    border: 0px;
+    height: 32px;
+}
+
+thead tr.top-sticky th, thead tr.top-sticky td {
+  position: sticky;
+  top: 0px;
+  height: 77px;
+  border: 1px;
+}
+
+thead tr.bottom-sticky th, thead tr.bottom-sticky td {
+  position: sticky;
+  top: 77px;
+  border: 1px;
+}
+
+
+
+
+.table-sm td, .table-sm th{
+    padding: 0px;
+}
+
+td{
+    padding: 0px;
+    border-spacing: 0px;
+    font-size: 0.8rem;
+    line-height: 0px;
+    min-height: 0px;
+}
+
+.table td, .table th{
+    vertical-align: middle;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+.table-data-rows{
+    border-top: 1px solid black;
+}
+
+.control-buttons{
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.add-row-button{
+  margin-right: 40px;
+}
+
+.login-card{
+  margin: 150px auto 0px auto;
+  width: 400px;
+}
+
+.submit-button{
+  margin-top: 40px;
+}
