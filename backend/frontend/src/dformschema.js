@@ -7,7 +7,8 @@ const column= [
       Header: "Date Rec.",
       defaultWidth: "90px",
       keys: "dateRec",
-      align: "left"
+      align: "center",
+      validationCode: 1
     },
     {
       Header: "Site Name",
@@ -28,5 +29,5 @@ const column= [
       align: "left"
     }
   ]
-  
+
   export default column;
