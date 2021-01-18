@@ -9,7 +9,7 @@ function InventoryPage(){
     height: "1px" 
   }
 
-  return <div><NavBar/><div style={style}></div><Table schema={columns} backendRoute="/serverdforms"/></div>
+  return <div><NavBar page="dforms"/><div style={style}></div><Table schema={columns} backendRoute="/serverdforms"/></div>
 
 }
 

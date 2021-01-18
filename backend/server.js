@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
@@ -28,7 +29,7 @@ app.use(flash());
 
 const PORT = process.env.PORT || 1000
 
-const connectionString = "mongodb+srv://crystal_ball:oUjlptAi4b6d@cluster0.nj3ox.mongodb.net/streammeters";
+const connectionString = process.env.CONNECTION_STRING;
 mongoose.connect(connectionString, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
@@ -127,6 +128,7 @@ app.get("/",function(req,res){
 
 
 app.post("/login",(req,res,next)=>{
+	console.log(process.env.CONNECTION_STRING);
   var response = 500;
   passport.authenticate("local",function(err,user,info){
     if (err){
