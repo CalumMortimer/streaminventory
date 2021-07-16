@@ -116,7 +116,7 @@ app.use(cors({
   credentials: true
 }))
 
-app.get("/",function(req,res){
+/*app.get("/",function(req,res){
   //User.register(new User({username: 'calum@jwfltd.com',resetPasswordToken: '',resetPasswordExpires: new Date()}),'abcdefg',function(err){
   //console.log('error while user register!',err);
   //   });
@@ -124,7 +124,7 @@ app.get("/",function(req,res){
  const errors = req.flash().error || [];
 
   res.render('login.ejs',{errors});
-});
+});*/
 
 
 app.post("/login",(req,res,next)=>{
